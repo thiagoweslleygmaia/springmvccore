@@ -19,14 +19,13 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.com.springmvc.business.DepartamentoBusiness;
-import br.com.springmvc.config.ApplicationConfig;
 import br.com.springmvc.config.ConfigContextCore;
 import br.com.springmvc.dao.DepartamentoDao;
 import br.com.springmvc.model.Departamento;
 
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {/*ApplicationConfig.class*/ ConfigContextCore.class})
+@ContextConfiguration(classes = { ConfigContextCore.class })
 @Rollback(value = true)
 @Transactional
 public class DepartamentoBusinessTest {

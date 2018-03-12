@@ -9,8 +9,6 @@ import br.com.springmvc.dao.DepartamentoDao;
 import br.com.springmvc.model.Departamento;
 
 @Service
-//@Component
-//@Transactional
 public class DepartamentoBusinessImpl implements DepartamentoBusiness {
 
 	@Autowired
@@ -91,20 +89,4 @@ public class DepartamentoBusinessImpl implements DepartamentoBusiness {
 			throw new Exception("Nome departamento é obrigatório.");
 		}
 	}
-	
-//	public static void main(String[] args) {
-//		try {
-//			AbstractApplicationContext context = new AnnotationConfigApplicationContext(configContextCore.class);
-//			DepartamentoBusiness departamentoBusiness = (DepartamentoBusiness) context.getBean("departamentoBusinessImpl");
-//			List<Departamento> listDepart = departamentoBusiness.listarDepartamentos();
-//			for (Departamento dep : listDepart) {
-//				System.out.println(dep.getCodDepartamento());
-//				System.out.println(dep.getNomeDepartamento());
-//				System.out.println(dep.getLocalizacaoDepartamento());
-//			}
-//			context.close();
-//		} catch (Exception e) {
-//			Logger.getLogger(DepartamentoBusinessImpl.class).error(e.getMessage());
-//		}
-//	}
 }
