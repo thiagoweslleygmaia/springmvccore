@@ -1,4 +1,4 @@
-package br.com.springmvc.business.test;
+package br.com.springmvc.departamento.business.test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,14 +18,14 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.springmvc.business.DepartamentoBusiness;
-import br.com.springmvc.config.ConfigContextCore;
-import br.com.springmvc.dao.DepartamentoDao;
+import br.com.springmvc.config.ApplicationConfig;
+import br.com.springmvc.departamento.business.DepartamentoBusiness;
+import br.com.springmvc.departamento.dao.DepartamentoDao;
 import br.com.springmvc.model.Departamento;
 
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = { ConfigContextCore.class })
+@ContextConfiguration(classes = { ApplicationConfig.class })
 @Rollback(value = true)
 @Transactional
 public class DepartamentoBusinessTest {
