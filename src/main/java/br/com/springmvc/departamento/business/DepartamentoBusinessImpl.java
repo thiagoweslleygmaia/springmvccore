@@ -40,11 +40,6 @@ public class DepartamentoBusinessImpl implements DepartamentoBusiness {
 	}
 	
 	@Override
-	public Departamento get(Long id) throws DepartamentoBusinessException {
-		return departamentoDao.get(id);
-	}
-
-	@Override
 	public Departamento incluirDepartamento(Departamento departamento) throws DepartamentoBusinessException {		
 		if(departamento==null
 				|| departamento.getNomeDepartamento()==null

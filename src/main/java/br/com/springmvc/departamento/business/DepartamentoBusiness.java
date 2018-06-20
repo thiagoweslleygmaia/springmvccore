@@ -13,8 +13,6 @@ public interface DepartamentoBusiness {
 	
 	Departamento incluirDepartamento(Departamento departamento) throws DepartamentoBusinessException;
 	
-	Departamento get(Long id) throws DepartamentoBusinessException;
-	
 	Departamento atualizarDepartamento(Departamento departamento) throws DepartamentoBusinessException;
 	
 	Departamento excluirDepartamento(Departamento departamento) throws DepartamentoBusinessException;
